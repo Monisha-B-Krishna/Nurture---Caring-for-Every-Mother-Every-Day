@@ -5,7 +5,7 @@ from models.ml_model import predict_depression
 from datetime import datetime
 
 # Gemini Setup
-client = genai.Client(api_key="AIzaSyD0x6UECZaycr3Gz2PJWFDs4RQ-d4i_seY")
+client = genai.Client(api_key="YOUR_API_KEY")
 MODEL = "gemini-2.5-flash"
 
 def generate_notifications(user, pregnancy, mental, cursor):
@@ -735,5 +735,6 @@ def woman_dashboard(user):
 
         else:
             st.warning("No hospital infrastructure data available for your district.")
+
 
     conn.close()
