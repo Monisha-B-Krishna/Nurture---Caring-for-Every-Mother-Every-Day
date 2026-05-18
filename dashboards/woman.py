@@ -92,9 +92,8 @@ def woman_dashboard(user):
     generate_notifications(user, pregnancy, mental, cursor)
     conn.commit()
 
-    # -----------------------------------------------------
     # Sidebar Features
-    # -----------------------------------------------------
+
 
     features = [
         "Chatbot Assistant",
